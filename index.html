@@ -78,8 +78,8 @@
     }
 
     .intro-section {
-  background-color: #fdece6; /* blush pink background */
-  padding: 60px 20px 120px;  /* top | sides | bottom */
+  background: linear-gradient(to bottom, rgba(255, 249, 246, 0.8), #fdece6);
+  padding: 60px 20px 120px;
   position: relative;
   z-index: 1;
 }
@@ -141,12 +141,17 @@
     gap: 20px;
   }
 
-  .intro-card {
+    .intro-card {
     width: 90%;
     margin: 0 auto;
   }
-}
-  </style>
+
+  .footer-strip {
+    height: 192px;
+    background-color: #e6d5c3;
+    width: 100%;
+  }
+</style>
 </head>
 <body>
 
@@ -181,7 +186,8 @@
         <p>A look into my process for creating pieces</p>
       </div>
     </div>
-  </section>
+   </section>
 
+  <footer class="footer-strip"></footer>
 </body>
 </html>
