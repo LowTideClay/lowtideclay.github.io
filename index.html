@@ -7,23 +7,26 @@
   <meta name="keywords" content="polymer clay earrings, handmade jewelry, Low Tide Clay, Charleston SC, crafting blog" />
   <title>Low Tide Clay | Handmade Jewelry Blog by Gina</title>
 
-  <!-- Fonts -->
+  <!-- Google Fonts -->
   <link
-  href="https://fonts.googleapis.com/css2
-    ?family=Montserrat:wght@400;600
-    &family=Pacifico
-    &family=Playfair+Display:ital,wght@0,400;0,700
-    &display=swap"
-  rel="stylesheet"
-/>
+    href="https://fonts.googleapis.com/css2
+      ?family=Montserrat:wght@400;600
+      &family=Pacifico
+      &family=Playfair+Display:ital,wght@0,400;0,700
+      &display=swap"
+    rel="stylesheet"
+  />
 
   <style>
+    /*────────────────────────────────────────────────────────────────────────*/
+    /* 1. CSS VARIABLES & RESET                                             */
     :root {
       --bg: #fff9f6;
       --accent: #ffece3;
       --primary: #213547;
       --muted: #4b5563;
       --card-bg: #fff;
+      --spacing: 2rem;
     }
 
     * {
@@ -32,206 +35,179 @@
       padding: 0;
     }
 
-   body {
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  background-color: var(--bg); /* soft base background */
-}
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--bg);
+      color: var(--primary);
+      line-height: 1.5;
+    }
 
-    header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 20px;
-  background-color: var(--bg);
-}
-header img {
-  height: 60px;
-  width: auto;
-}
-nav a {
-  text-decoration: none;
-  color: var(--primary);
-  font-weight: 600;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
+    /*────────────────────────────────────────────────────────────────────────*/
+    /* 2. HEADER & NAVIGATION                                                */
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--spacing) 0;
+    }
+    .site-header img {
+      height: 60px;
+    }
+    .nav__list {
+      list-style: none;
+      display: flex;
+      gap: var(--spacing);
+    }
+    .nav__list a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /*────────────────────────────────────────────────────────────────────────*/
+    /* 3. HERO IMAGE                                                          */
     .hero {
-  text-align: center;
-  padding: 40px 20px;
-}
-
+      margin-top: var(--spacing);
+    }
     .hero__img {
-  width: 100%;
-  display: block;
-  border-radius: 16px;
-}
+      width: 100%;
+      display: block;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
 
-.hero-img-wrapper {
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-img-wrapper img {
-  max-width: 100%;
-  height: auto;
-}
-
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  font-weight: 700;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  color: var(--primary);
-}
-
-    .hero p {
-  font-size: 18px;
-  color: var(--muted);
-}
-
+    /*────────────────────────────────────────────────────────────────────────*/
+    /* 4. INTRO SECTION                                                       */
     .intro {
-  background: url("images/bg-beach.jpg") center/cover no-repeat;
-  text-align: center;
-  padding: 4rem 0;
-}
-.intro__content {
-  /* if you need a wrapper besides .container */
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.intro__title {
-  font-family: "Pacifico", cursive;
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-.intro__subtitle {
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-size: 1.25rem;
-}
+      background: url("images/bg-beach.jpg") center/cover no-repeat;
+      text-align: center;
+      padding: 4rem 0;
+    }
+    .intro__title {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .intro__subtitle {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.25rem;
+    }
 
-.intro-cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  max-width: 960px;
-  margin: 0 auto;
-}
-  
-  .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: var(--spacing);
-  padding: 4rem 0;
-  background-color: var(--accent);
-}
-.card {
-  background-color: var(--card-bg);
-  padding: 2rem;
-  border-radius: 16px;
-  text-align: center;
-}
-.card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-}
-.card p {
-  font-size: 1rem;
-  color: var(--primary);
-}
+    /*────────────────────────────────────────────────────────────────────────*/
+    /* 5. FEATURE CARDS                                                       */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: var(--spacing);
+      padding: 4rem 0;
+      background-color: var(--accent);
+    }
+    .card {
+      background-color: var(--card-bg);
+      padding: 2rem;
+      border-radius: 16px;
+      text-align: center;
+    }
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .card p {
+      font-size: 1rem;
+      color: var(--primary);
+    }
 
-   @media (max-width: 768px) {
-  header {
-    padding: 20px;
-  }
+    /*────────────────────────────────────────────────────────────────────────*/
+    /* 6. FOOTER / SOCIAL ICONS                                               */
+    .site-footer {
+      padding: var(--spacing) 0;
+    }
+    .social {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1.5rem;
+    }
+    .social img {
+      width: 32px;
+      height: 32px;
+    }
 
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav a {
-    margin: 10px 0;
-    font-size: 14px;
-  }
-}
-
-  .hero-img-wrapper {
-    padding-bottom: 20px;
-  }
-
-  .hero h1 {
-    margin-top: 20px;
-  }
-
-  .intro-cards {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .intro-card {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .site-footer {
-  padding: var(--spacing) 0;
-}
-.social {
-  display: flex;
-  justify-content: flex-end;
-  gap: 1.5rem;
-}
-.social img {
-  width: 32px;
-  height: 32px;
-}
-</style>
+    /*────────────────────────────────────────────────────────────────────────*/
+    /* 7. RESPONSIVE                                                         */
+    @media (max-width: 768px) {
+      .nav__list {
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav__list a {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
-<body>
 
-  <header>
-    <img src="logo.png" alt="Low Tide Clay Logo">
-    <nav>
-  <a href="#about">ABOUT</a>
-  <a href="#process">PROCESS</a>
-  <a href="#gallery">GALLERY</a>
-  <a href="#shop">SHOP</a>
-</nav>
+<body>
+  <!-- HEADER -->
+  <header class="site-header container">
+    <a href="#"><img src="images/logo.png" alt="Low Tide Clay Logo" /></a>
+    <ul class="nav__list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#shop">Shop</a></li>
+    </ul>
   </header>
 
-  <section class="hero">
-  <div class="hero-img-wrapper">
-    <img src="flatlay-hero.jpg" alt="Polymer clay flat lay tools">
-  </div>
-  <h1>Hi, I'm Gina!</h1>
-  <p>Handmade jewelry blog by Gina</p>
-</section>
+  <!-- HERO -->
+  <section class="hero container">
+    <img
+      src="images/flatlay-hero.jpg"
+      alt="Polymer clay flat-lay tools"
+      class="hero__img"
+    />
+  </section>
 
-  <section class="intro-section">
-    <div class="intro-cards">
-      <div class="intro-card">
-        <h3>My Favorite Tools</h3>
-        <p>A guide to my most-loved polymer clay tools</p>
-      </div>
-      <div class="intro-card">
-        <h3>Why I Started Low Tide Clay</h3>
-        <p>The story behind my handmade jewelry blog</p>
-      </div>
-      <div class="intro-card">
-        <h3>Behind the Scenes</h3>
-        <p>A look into my process for creating pieces</p>
-      </div>
+  <!-- INTRO -->
+  <section class="intro container">
+    <h1 class="intro__title">Hi, I’m Gina!</h1>
+    <p class="intro__subtitle">Handmade jewelry blog by Gina</p>
+  </section>
+
+  <!-- FEATURE CARDS -->
+  <section class="cards container">
+    <article class="card">
+      <h2>My Favorite Tools</h2>
+      <p>A guide to my most-loved polymer clay tools</p>
+    </article>
+    <article class="card">
+      <h2>Why I Started Low Tide Clay</h2>
+      <p>The story behind my handmade jewelry blog</p>
+    </article>
+    <article class="card">
+      <h2>Behind the Scenes</h2>
+      <p>A look into my process for creating pieces</p>
+    </article>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer container">
+    <div class="social">
+      <a href="#"><img src="images/icon-etsy.svg"    alt="Etsy"       /></a>
+      <a href="#"><img src="images/icon-instagram.svg" alt="Instagram" /></a>
+      <a href="#"><img src="images/icon-facebook.svg"  alt="Facebook"  /></a>
+      <a href="#"><img src="images/icon-youtube.svg"   alt="YouTube"   /></a>
+      <a href="#"><img src="images/icon-tiktok.svg"    alt="TikTok"    /></a>
     </div>
-   </section>
-
-  <footer class="footer-strip"></footer>
+  </footer>
 </body>
 </html>
