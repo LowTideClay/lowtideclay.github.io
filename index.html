@@ -40,57 +40,61 @@
     }
 
     header img {
-      height: 60px;
-    }
+  height: 80px; /* increased from 60px */
+}
 
     nav a {
-      margin-left: 30px;
-      text-decoration: none;
-      color: var(--primary);
-      font-weight: 600;
-      font-size: 15px;
-    }
+  margin-left: 30px;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
 
     .hero {
-      text-align: center;
-      padding: 40px 20px;
-    }
+  text-align: center;
+  padding: 40px 20px;
+}
 
     .hero img {
-      width: 320px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    }
+  width: 100%;
+  max-width: 440px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
 
     .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 42px;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      color: var(--primary);
-    }
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
 
     .hero p {
-      font-size: 17px;
-      color: var(--muted);
-    }
+  font-size: 18px;
+  color: var(--muted);
+}
 
     .intro-section {
-  background: linear-gradient(to bottom, #fceae4, #fdece6);
+  background: linear-gradient(to bottom, #fdeae3, #fae8e4);
   padding: 60px 20px 120px;
-  margin-bottom: 192px; /* ← Add this line */
+  margin-bottom: 192px;
   position: relative;
   z-index: 1;
 }
 
-    .intro-cards {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-      max-width: 960px;
-      margin: 0 auto;
-    }
+    .intro-card {
+  background-color: #fffaf6;
+  padding: 40px 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  width: 280px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
 
     .intro-card {
       background-color: var(--card-bg);
@@ -113,11 +117,11 @@
       color: var(--primary);
     }
 
-    .intro-card p {
-      font-size: 15px;
-      color: var(--muted);
-      line-height: 1.5;
-    }
+ .intro-card p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+}
 
    @media (max-width: 768px) {
   header {
@@ -147,8 +151,9 @@
 
   .footer-strip {
   height: 192px;
-  background-color: #e6d5c3;
+  background-color: #fdeae3;
   width: 100%;
+}
 }
 </style>
 </head>
@@ -157,11 +162,11 @@
   <header>
     <img src="logo.png" alt="Low Tide Clay Logo">
     <nav>
-      <a href="#about">ABOUT</a>
-      <a href="#process">PROCESS</a>
-      <a href="#gallery">GALLERY</a>
-      <a href="#shop">SHOP</a>
-    </nav>
+  <a href="#about">ABOUT</a>
+  <a href="#process">PROCESS</a>
+  <a href="#gallery">GALLERY</a>
+  <a href="#shop">SHOP</a>
+</nav>
   </header>
 
   <section class="hero">
