@@ -8,7 +8,14 @@
   <title>Low Tide Clay | Handmade Jewelry Blog by Gina</title>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <link
+  href="https://fonts.googleapis.com/css2
+    ?family=Montserrat:wght@400;600
+    &family=Pacifico
+    &family=Playfair+Display:ital,wght@0,400;0,700
+    &display=swap"
+  rel="stylesheet"
+/>
 
   <style>
     :root {
@@ -36,33 +43,20 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 30px 20px;
   background-color: var(--bg);
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
 }
-
 header img {
-  height: 36px;
+  height: 60px;
   width: auto;
-  display: block;
 }
-
-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 10px;
-}
-
 nav a {
   text-decoration: none;
   color: var(--primary);
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
     .hero {
@@ -70,12 +64,10 @@ nav a {
   padding: 40px 20px;
 }
 
-    .hero-img-wrapper img {
+    .hero__img {
   width: 100%;
-  max-width: 440px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: block;
+  border-radius: 16px;
 }
 
 .hero-img-wrapper {
@@ -103,12 +95,25 @@ nav a {
   color: var(--muted);
 }
 
-    .intro-section {
-  background: linear-gradient(to bottom, #fdeae3, #fae8e4);
-  padding: 60px 20px 120px;
-  margin-bottom: 192px;
-  position: relative;
-  z-index: 1;
+    .intro {
+  background: url("images/bg-beach.jpg") center/cover no-repeat;
+  text-align: center;
+  padding: 4rem 0;
+}
+.intro__content {
+  /* if you need a wrapper besides .container */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.intro__title {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.intro__subtitle {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1.25rem;
 }
 
 .intro-cards {
@@ -120,31 +125,26 @@ nav a {
   margin: 0 auto;
 }
   
-  .intro-card {
-      background-color: var(--card-bg);
-      padding: 30px 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      width: 280px;
-      text-align: center;
-      transition: transform 0.2s ease;
-    }
-
-    .intro-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .intro-card h3 {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 12px;
-      color: var(--primary);
-    }
-
- .intro-card p {
-  font-size: 14px;
-  color: var(--muted);
-  line-height: 1.6;
+  .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: var(--spacing);
+  padding: 4rem 0;
+  background-color: var(--accent);
+}
+.card {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+}
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.card p {
+  font-size: 1rem;
+  color: var(--primary);
 }
 
    @media (max-width: 768px) {
@@ -181,11 +181,17 @@ nav a {
     margin: 0 auto;
   }
 
-  .footer-strip {
-    height: 192px;
-    background-color: #fdeae3;
-    width: 100%;
-  }
+  .site-footer {
+  padding: var(--spacing) 0;
+}
+.social {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+.social img {
+  width: 32px;
+  height: 32px;
 }
 </style>
 </head>
