@@ -61,19 +61,44 @@
       font-size: 1.1rem;
     }
 
-    .hero {
-      text-align: center;
-      background-color: var(--accent);
-      padding: 30px 20px;
-    }
+    .hero-header {
+  position: relative;
+  text-align: center;
+}
 
-    .hero img {
-      width: 100%;
-      max-width: 800px;
-      height: auto;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
+.hero-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-nav-container {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.hero-logo {
+  max-width: 180px;
+  height: auto;
+}
+
+.hero-nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #213547;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+}
 
     .hero h1 {
       font-family: 'Playfair Display', serif;
@@ -143,17 +168,20 @@
 </head>
 <body>
 
-  <header>
-    <img src="images/admin/logo.png" alt="Low Tide Clay Logo" />
-    <nav>
-      <a href="#">ABOUT</a>
-      <a href="#">PROCESS</a>
-      <a href="#">GALLERY</a>
-      <a href="#">SHOP</a>
-    </nav>
+  <header class="hero-header">
+    <div class="hero-nav-container">
+      <img src="images/admin/logo.png" alt="Low Tide Clay Logo" class="hero-logo" />
+      <nav class="hero-nav">
+        <a href="#">ABOUT</a>
+        <a href="#">PROCESS</a>
+        <a href="#">GALLERY</a>
+        <a href="#">SHOP</a>
+      </nav>
+    </div>
+    <img src="images/admin/flatlay-hero.png" alt="Flatlay of tools and clay" class="hero-img" />
   </header>
 
-  <section class="hero">
+  <section class="hero-text">
     <img src="images/admin/flatlay-hero.png" alt="Flatlay of tools and clay" />
     <h1>Hi, I'm Gina!</h1>
     <p>Handmade jewelry blog by Gina</p>
