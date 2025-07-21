@@ -13,12 +13,11 @@
   
 <style>
     :root {
-      --bg: #fff9f6;
-      --accent: #ffece3;
-      --primary: #213547;
-      --muted: #4b5563;
-      --card-bg: #fff;
-    }
+  --bg: #fff9f6;
+  --accent: #ffece3;
+  --primary: #213547;
+  --card-bg: #fff;
+}
 
     * {
       box-sizing: border-box;
@@ -104,23 +103,32 @@
 }
 
 .intro {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
   text-align: center;
-  background-color: var(--accent);
-  padding: 30px 20px;
+  background: none;
+  padding: 0 20px;
 }
 
 .intro h1 {
   font-family: 'Pacifico', cursive;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 3rem;
   color: var(--primary);
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
 }
 
 .intro p {
   font-size: 1.2rem;
-  color: var(--muted);
-}  
-    .cards {
+  color: var(--primary);
+  margin-top: 5px;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+ }
+
+    
+.cards {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -145,9 +153,9 @@
     }
 
     .card p {
-      color: var(--muted);
-      font-size: 1rem;
-    }
+  color: var(--primary);
+  font-size: 1rem;
+}
 
     footer {
       margin-top: 40px;
@@ -188,23 +196,24 @@
 </head>
 <body>
 
-  <header class="hero-header">
-    <div class="hero-nav-container">
-      <img src="images/admin/logo.png" alt="Low Tide Clay Logo" class="hero-logo" />
-      <nav class="hero-nav">
-        <a href="#">ABOUT</a>
-        <a href="#">PROCESS</a>
-        <a href="#">GALLERY</a>
-        <a href="#">SHOP</a>
-      </nav>
-    </div>
-    <img src="images/admin/flatlay-hero.png" alt="Flatlay of tools and clay" class="hero-img" />
-  </header>
+ <header class="hero-header">
+  <div class="hero-nav-container">
+    <img src="images/admin/logo.png" alt="Low Tide Clay Logo" class="hero-logo" />
+    <nav class="hero-nav">
+      <a href="#">ABOUT</a>
+      <a href="#">PROCESS</a>
+      <a href="#">GALLERY</a>
+      <a href="#">SHOP</a>
+    </nav>
+  </div>
 
-<section class="intro">
+  <img src="images/admin/flatlay-hero.png" alt="Flatlay of tools and clay" class="hero-img" />
+
+  <section class="intro">
     <h1>Hi, I'm Gina!</h1>
     <p>Handmade jewelry blog by Gina</p>
   </section>
+</header>
 
   <section class="cards">
     <div class="card">
