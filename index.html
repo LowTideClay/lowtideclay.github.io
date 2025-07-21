@@ -200,6 +200,17 @@ body {
         gap: 10px;
       }
     }
+
+    .visually-hidden {
+      position: absolute;
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 0;
+      border: 0;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      white-space: nowrap;
+    }
   </style>
 </head>
 <body>
@@ -221,21 +232,22 @@ body {
   </header>
 
   <main>
-  <section class="cards">
-    <div class="card">
-      <h2>My Favorite Tools</h2>
-      <p>A guide to my most-loved polymer clay tools</p>
-    </div>
-    <div class="card">
-      <h2>Why I Started Low Tide Clay</h2>
-      <p>The story behind my handmade jewelry blog</p>
-    </div>
-    <div class="card">
-      <h2>Behind the Scenes</h2>
-      <p>A look into my process for creating pieces</p>
-    </div>
-  </section>
-</main>
+    <h1 class="visually-hidden">Low Tide Clay Blog</h1>
+    <section class="cards">
+      <div class="card">
+        <h2>My Favorite Tools</h2>
+        <p>A guide to my most-loved polymer clay tools</p>
+      </div>
+      <div class="card">
+        <h2>Why I Started Low Tide Clay</h2>
+        <p>The story behind my handmade jewelry blog</p>
+      </div>
+      <div class="card">
+        <h2>Behind the Scenes</h2>
+        <p>A look into my process for creating pieces</p>
+      </div>
+    </section>
+  </main>
 
   <footer>
   <div class="social-icons">
