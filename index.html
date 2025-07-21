@@ -7,20 +7,20 @@
   <meta name="keywords" content="polymer clay earrings, handmade jewelry, Low Tide Clay, Charleston SC, crafting blog" />
   <meta name="author" content="Gina" />
   <link rel="icon" href="favicon.ico" />
-<meta property="og:title" content="Low Tide Clay" />
-<meta property="og:description" content="Handmade jewelry blog by Gina" />
-<meta property="og:image" content="images/admin/og-preview.jpg" />
-<title>Low Tide Clay | Handmade Jewelry Blog by Gina</title>
+  <meta property="og:title" content="Low Tide Clay" />
+  <meta property="og:description" content="Handmade jewelry blog by Gina" />
+  <meta property="og:image" content="images/admin/og-preview.jpg" />
+  <title>Low Tide Clay | Handmade Jewelry Blog by Gina</title>
 
   <!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@600&family=Raleway:wght@400;600&display=swap" rel="stylesheet" />
-  
-<style>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@600&family=Raleway:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
     :root {
-  --bg: #fff9f6;
-  --accent: #ffece3;
-  --primary: #213547;
-}
+      --bg: #fff9f6;
+      --accent: #ffece3;
+      --primary: #213547;
+    }
 
     * {
       box-sizing: border-box;
@@ -28,38 +28,57 @@
       padding: 0;
     }
 
-body {
-  position: relative;  
-  font-family: 'Raleway', sans-serif;
-  background-image: url('images/admin/flatlay-hero.png');
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  color: var(--primary);
-  line-height: 1.6;
-  padding: 0;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    body {
+      position: relative;
+      font-family: 'Raleway', sans-serif;
+      background-image: url('images/admin/flatlay-hero.png');
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      color: var(--primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
 
     header {
-  background: none;
-  padding: 0;
-  margin: 0;
-}
+      background: none;
+      padding: 0;
+      margin: 0;
+    }
 
-    header img {
-      max-width: 200px;
+    .hero-header {
+      position: relative;
+      text-align: center;
+    }
+
+    .hero-img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-nav-container {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      padding: 0 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 3;
+    }
+
+    .hero-logo {
+      max-width: 180px;
       height: auto;
     }
 
-    nav {
-      margin-top: 15px;
-    }
-
-    nav a {
-      margin: 0 15px;
+    .hero-nav a {
+      margin: 0 10px;
       text-decoration: none;
       color: var(--primary);
       font-weight: 600;
@@ -67,93 +86,45 @@ body {
       font-size: 1.1rem;
     }
 
-    .hero-header {
-  position: relative;
-  text-align: center;
-}
+    .intro {
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background: none;
+      padding: 0 20px;
+      z-index: 3;
+    }
 
-.hero-img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+    .intro h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      color: var(--primary);
+      margin: 0;
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+    }
 
-.hero-nav-container {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  right: 0;
-  width: 100%;
-  padding: 0 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 3;
-}
+    .intro p {
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin-top: 5px;
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+    }
 
-.hero-logo {
-  max-width: 180px;
-  height: auto;
-}
-
-.hero-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #213547;
-  font-weight: 600;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.1rem;
-}
-
-.intro {
-  position: absolute;
-  bottom: 30px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  background: none;
-  padding: 0 20px;
-  z-index: 3;
-}
-
-.intro h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 3rem;
-  color: var(--primary);
-  margin: 0;
-  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
-}
-
-@media (max-width: 600px) {
-  .intro h1 {
-    font-size: 2rem;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-}
-
-.intro p {
-  font-size: 1.2rem;
-  color: var(--primary);
-  margin-top: 5px;
-  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
-}
-
-    
-.cards {
-  position: absolute;
-  top: 72vh;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  width: 100%;
-  max-width: 960px;
-  justify-content: center;
-  z-index: 3;
-}
+    .cards {
+      position: absolute;
+      top: 93vh;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      width: 100%;
+      max-width: 960px;
+      justify-content: center;
+      z-index: 3;
+    }
 
     .card {
       background-color: var(--accent);
@@ -173,27 +144,19 @@ body {
     }
 
     .card p {
-  color: var(--primary);
-  font-size: 1rem;
-  margin-top: 10px;
-}
-
-footer {
-  position: relative;
-  height: 100px; /* or however tall the brown strip in your image is */
-  background: none;
-  margin: 0;
-  padding: 0;
-}
+      color: var(--primary);
+      font-size: 1rem;
+      margin-top: 10px;
+    }
 
     .social-icons {
-  position: absolute;
-  bottom: 30px;
-  left: 40px;
-  display: flex;
-  gap: 15px;
-  z-index: 3;
-}
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: flex;
+      gap: 15px;
+      z-index: 9999;
+    }
 
     .social-icons img {
       width: 32px;
@@ -201,42 +164,54 @@ footer {
       transition: transform 0.2s ease;
     }
 
-  .social-icons img:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
+    .social-icons img:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
 
-@media (max-width: 600px) {
-  .hero-nav-container {
-    flex-direction: column;
-    gap: 10px;
-  }
+    @media (max-width: 600px) {
+      .hero-nav-container {
+        flex-direction: column;
+        gap: 10px;
+      }
 
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-</style>
+      .intro h1 {
+        font-size: 2rem;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+
+      .cards {
+        flex-direction: column;
+        align-items: center;
+        top: 105vh;
+      }
+
+      .social-icons {
+        bottom: 20px;
+        right: 20px;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header class="hero-header">
+    <div class="hero-nav-container">
+      <img src="images/admin/logo.png" alt="Low Tide Clay brand logo with seashell motif" class="hero-logo" />
+      <nav class="hero-nav">
+        <a href="#">ABOUT</a>
+        <a href="#">PROCESS</a>
+        <a href="#">GALLERY</a>
+        <a href="#">SHOP</a>
+      </nav>
+    </div>
 
- <header class="hero-header">
-  <div class="hero-nav-container">
-    <img src="images/admin/logo.png" alt="Low Tide Clay brand logo with seashell motif" class="hero-logo" />
-    <nav class="hero-nav">
-      <a href="#">ABOUT</a>
-      <a href="#">PROCESS</a>
-      <a href="#">GALLERY</a>
-      <a href="#">SHOP</a>
-    </nav>
-  </div>
-
-  <section class="intro">
-    <h1>Hi, I'm Gina!</h1>
-    <p>Handmade jewelry blog by Gina</p>
-  </section>
-</header>
+    <section class="intro">
+      <h1>Hi, I'm Gina!</h1>
+      <p>Handmade jewelry blog by Gina</p>
+    </section>
+  </header>
 
   <section class="cards">
     <div class="card">
@@ -253,25 +228,22 @@ footer {
     </div>
   </section>
 
-  <footer>
-    <div class="social-icons">
-      <a href="https://www.etsy.com/shop/LowTideClay" target="_blank" rel="noopener noreferrer" aria-label="Visit Etsy Shop">
-        <img src="images/icons/icon-etsy.png" alt="Etsy" />
-      </a>
-      <a href="https://www.instagram.com/low.tide.clay" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram Profile">
-        <img src="images/icons/icon-instagram.png" alt="Instagram" />
-      </a>
-      <a href="https://www.facebook.com/61577324963285" target="_blank" rel="noopener noreferrer" aria-label="Visit Facebook Page">
-        <img src="images/icons/icon-facebook.png" alt="Facebook" />
-      </a>
-      <a href="https://www.youtube.com/@LowTideClay" rel="noopener noreferrer" aria-label="Visit YouTube Channel">
-        <img src="images/icons/icon-youtube.png" alt="YouTube" />
-      </a>
-      <a href="https://www.tiktok.com/@lowtideclay" target="_blank" rel="noopener noreferrer" aria-label="Visit TikTok Profile">
-        <img src="images/icons/icon-tiktok.png" alt="TikTok" />
-      </a>
-    </div>
-  </footer>
-
+  <div class="social-icons">
+    <a href="https://www.etsy.com/shop/LowTideClay" target="_blank" rel="noopener noreferrer" aria-label="Visit Etsy Shop">
+      <img src="images/icons/icon-etsy.png" alt="Etsy" />
+    </a>
+    <a href="https://www.instagram.com/low.tide.clay" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram Profile">
+      <img src="images/icons/icon-instagram.png" alt="Instagram" />
+    </a>
+    <a href="https://www.facebook.com/61577324963285" target="_blank" rel="noopener noreferrer" aria-label="Visit Facebook Page">
+      <img src="images/icons/icon-facebook.png" alt="Facebook" />
+    </a>
+    <a href="https://www.youtube.com/@LowTideClay" rel="noopener noreferrer" aria-label="Visit YouTube Channel">
+      <img src="images/icons/icon-youtube.png" alt="YouTube" />
+    </a>
+    <a href="https://www.tiktok.com/@lowtideclay" target="_blank" rel="noopener noreferrer" aria-label="Visit TikTok Profile">
+      <img src="images/icons/icon-tiktok.png" alt="TikTok" />
+    </a>
+  </div>
 </body>
 </html>
