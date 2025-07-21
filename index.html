@@ -26,7 +26,10 @@
 
     body {
   font-family: 'Raleway', sans-serif;
-  background-color: var(--bg);
+  background-image: url('images/admin/flatlay-hero.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
   color: var(--primary);
   line-height: 1.6;
   padding: 0;
@@ -128,12 +131,17 @@
 
     
 .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin: 40px 20px;
-    }
+  position: absolute;
+  top: 73%; /* adjust to match cream box position in the image */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 960px;
+  justify-content: center;
+}
 
     .card {
       background-color: var(--accent);
@@ -165,11 +173,12 @@
     }
 
     .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 10px;
-    }
+  position: absolute;
+  bottom: 30px; /* adjust to fit inside the brown footer of the image */
+  left: 40px;
+  display: flex;
+  gap: 15px;
+}
 
     .social-icons img {
       width: 32px;
@@ -207,8 +216,6 @@
       <a href="#">SHOP</a>
     </nav>
   </div>
-
-  <img src="images/admin/flatlay-hero.png" alt="Flatlay photo showing polymer clay tools, clay blocks, and sculpting accessories" class="hero-img" />
 
   <section class="intro">
     <h1>Hi, I'm Gina!</h1>
